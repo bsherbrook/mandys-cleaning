@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
+
+#titleText{
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Satisfy', cursive;
+    font-size:65px;
+}
+#logoPic{
+    width: 250px;
+}
+#buttonBox{
+   
+}
+#button{
+    height: 50px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: 'Rowdies', cursive;
+    /* color: white; */
+    /* border: solid 1px; */
+}
