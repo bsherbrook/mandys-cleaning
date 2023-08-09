@@ -3,25 +3,25 @@ import './Contact.css';
 import Button from "@mui/material/Button";
 
 export default function ContactForm(props){
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
 
   const handleNameChange = (e) => {
-    setName(e.target.value);
+    props.setName(e.target.value);
   };
 
   const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+    props.setEmail(e.target.value);
   };
 
   const handleMessageChange = (e) => {
-    setMessage(e.target.value);
+    props.setMessage(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted:', { name, email, message });
+    console.log(`Submitted: ${props.name}, ${props.email}, ${props.message}`);
     props.setContactSwitch(false);
   };
 
@@ -32,15 +32,15 @@ export default function ContactForm(props){
           <form onSubmit={handleSubmit} className=''>
             <div>
               <label>Name:</label><br />
-              <input className='rounded-lg pl-1' id='nameInput' type="text" value={name} onChange={handleNameChange} required />
+              <input className='rounded-lg pl-1' id='nameInput' type="text" onChange={handleNameChange} required />
             </div>
             <div>
               <label>Email:</label><br />
-              <input className='rounded-lg pl-1' id='emailInput' type="email" value={email} onChange={handleEmailChange} required />
+              <input className='rounded-lg pl-1' id='emailInput' type="email" onChange={handleEmailChange} required />
             </div>
             <div>
               <label>Message:</label><br />
-              <textarea className='rounded-lg pl-1' id='messageInput' value={message} onChange={handleMessageChange} rows="4" />
+              <textarea className='rounded-lg pl-1' id='messageInput' onChange={handleMessageChange} rows="4" />
             </div>
             <div className='flex justify-end'>
               <Button id='contactButton' variant='outlined' color='secondary' onClick={handleSubmit}>Submit</Button>

@@ -2,9 +2,20 @@ import Button from "@mui/material/Button";
 import './Header.css'
 
 export default function Header(props) {
-  function showModal(){
+  function showContact(){
     props.setContactSwitch(true);
-    console.log(props.contactSwitch);
+    props.setAboutSwitch(false);
+    props.setHomeSwitch(false);
+  }
+  function showAbout(){
+    props.setAboutSwitch(true);
+    props.setHomeSwitch(false);
+    props.setContactSwitch(false);
+  }
+  function showHome(){
+    props.setHomeSwitch(true);
+    props.setAboutSwitch(false);
+    props.setContactSwitch(false);
   }
   return (
     <>
@@ -16,9 +27,9 @@ export default function Header(props) {
                   Mandy's Compassionate Care & Cleaning Service
                 </div>
                   <div className="flex">
-                    <Button id="button" color="secondary" size="large" variant="outlined">Home</Button>
-                    <Button id="button" color="secondary" size="large" variant="outlined">About Us</Button>
-                    <Button id="button" color="secondary" size="large" variant="outlined" onClick={showModal}>Contact</Button>
+                    <Button id="button" color="secondary" size="large" variant="outlined" onClick={showHome}>Home</Button>
+                    <Button id="button" color="secondary" size="large" variant="outlined" onClick={showAbout}>About Us</Button>
+                    <Button id="button" color="secondary" size="large" variant="outlined" onClick={showContact}>Contact</Button>
                   </div>
             </div>
             <img src="./src/assets/logoHand.PNG" alt="a hand holding a heart" id="logoPic"/>

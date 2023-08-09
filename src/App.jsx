@@ -2,32 +2,50 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Contact from './components/Contact'
+import MobileHeader from './components/MobileHeader'
+import HomePage from './components/Home'
+import AboutUs from './components/AboutUs'
 
 function App() {
   const [contactSwitch, setContactSwitch] = useState(false);
+  const [homeSwitch, setHomeSwitch]= useState(true);
+  const [aboutSwitch, setAboutSwitch]= useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [width, setWidth]= useState(window.innerWidth);
 
   const breakpoint= 600;
-  function contactModal(){
-    setContactSwitch(true);
-  }
+
   useEffect(()=>{
     window.addEventListener('resize',()=>setWidth(window.innerWidth));
   },[]);
 
   return (
     <>
-      <Header 
-        contactSwitch={contactSwitch}
-        setContactSwitch={setContactSwitch}
-        contactModal={contactModal}
-      />
-       {width < breakpoint && (<div> test success!!!</div>)}        
+    {width > breakpoint ?<Header 
+          setContactSwitch={setContactSwitch}
+          setHomeSwitch={setHomeSwitch}
+          setAboutSwitch={setAboutSwitch}
+      /> :
+        <MobileHeader
+          setContactSwitch={setContactSwitch}
+          setHomeSwitch={setHomeSwitch}
+          setAboutSwitch={setAboutSwitch}
+      />    
+      }
+      {homeSwitch &&(<HomePage />)}   
+      {aboutSwitch &&(<AboutUs />)}    
       {contactSwitch &&(
         <Contact 
-          contactSwitch={contactSwitch}
           setContactSwitch={setContactSwitch}
-          contactModal={contactModal}
+          setHomeSwitch={setHomeSwitch}
+          setName={setName}
+          setEmail={setEmail}
+          setMessage={setMessage}
+          name={name}
+          message={message}
+          email={email}
         />
         )}
     </>
