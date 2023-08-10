@@ -1,11 +1,7 @@
-import { useEffect, useState } from 'react';
 import './Contact.css';
 import Button from "@mui/material/Button";
 
 export default function ContactForm(props){
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
 
   const handleNameChange = (e) => {
     props.setName(e.target.value);
@@ -23,11 +19,12 @@ export default function ContactForm(props){
     e.preventDefault();
     console.log(`Submitted: ${props.name}, ${props.email}, ${props.message}`);
     props.setContactSwitch(false);
+    props.setThankSwitch(true);
   };
 
   return (
     <div id='formBoxBox' className="flex justify-center items-center p-20">
-        <div id='formBox' className='bg-rose-100 flex flex-col justify-center items-center'>
+        <div id='formBox' className='bg-rose-100 flex flex-col justify-center items-center shadow-lg shadow-black-300 border-purple-200 border-2'>
           <h1 id='formTitle' className='text-3xl p-5'>Contact Us</h1>
           <form onSubmit={handleSubmit} className=''>
             <div>

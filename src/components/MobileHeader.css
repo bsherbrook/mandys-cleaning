@@ -1,71 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
 
-#titleText{
-    /* font-family: 'Indie Flower', cursive; */
-    font-family: 'Satisfy', cursive;
-    font-size:65px;
-    line-height: 3rem;
-    text-align: center;
-}
-#logoPic{
-    width: 250px;
-}
-#button{
-    height: 50px;
-    margin-left: 25px;
-    font-size: 20px;
-    font-family: 'Rowdies', cursive;
-    /* color: white; */
-    /* border: solid 1px; */
-}
-@media only screen and (max-width: 1490px){
+@media only screen and (max-width: 600px){
     #titleText{
-        font-size:55px;
+        /* font-family: 'Indie Flower', cursive; */
+        font-family: 'Satisfy', cursive;
+        font-size:25px;
+        line-height: 3rem;
+        text-align: center;
     }
-}
-@media only screen and (max-width: 1309px){
-    #titleText{
-        font-size:45px;
+    #logoPic{
+        width: 100px;
+        height: auto;
     }
-}
-@media only screen and (max-width: 1124px){
     #button{
-        height: 40px;
+        height: 50px;
         margin-left: 25px;
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 724px){
-    #logoPic{
-        width: 200px;
-        height: 150px;
-    }    
-}
-@media only screen and (max-width: 669px){
-    #logoPic{
-        width: 150px;
-        height: 100px;
-    }    
-    #titleText{
-        font-size:35px;
-    }
-    #button{
-        height: 30px;
-        margin-left: 10px;
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width: 669px){
-    #logoPic{
-        width: 150px;
-        height: 100px;
-    }    
-    #titleText{
-        font-size:35px;
-    }
-    #button{
-        height: 30px;
-        margin-left: 10px;
-        font-size: 15px;
+        font-size: 20px;
+        font-family: 'Rowdies', cursive;
+        /* color: white; */
+        /* border: solid 1px; */
     }
 }

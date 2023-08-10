@@ -6,16 +6,19 @@ export default function Header(props) {
     props.setContactSwitch(true);
     props.setAboutSwitch(false);
     props.setHomeSwitch(false);
+    props.setThankSwitch(false);
   }
   function showAbout(){
     props.setAboutSwitch(true);
     props.setHomeSwitch(false);
     props.setContactSwitch(false);
+    props.setThankSwitch(false);
   }
   function showHome(){
     props.setHomeSwitch(true);
     props.setAboutSwitch(false);
     props.setContactSwitch(false);
+    props.setThankSwitch(false);
   }
   return (
     <>
