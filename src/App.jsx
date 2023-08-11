@@ -17,8 +17,6 @@ function App() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [width, setWidth]= useState(window.innerWidth);
-  const [emailSent, setEmailSent] = useState(false);
-  const [validated, setValidated] = useState(false);
 
   const breakpoint= 600;
 
