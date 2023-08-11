@@ -1,8 +1,8 @@
 import './Contact.css';
 import Button from "@mui/material/Button";
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm(props){
-
   const handleNameChange = (e) => {
     props.setName(e.target.value);
   };
@@ -18,10 +18,32 @@ export default function ContactForm(props){
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Submitted: ${props.name}, ${props.email}, ${props.message}`);
+    const templateName= props.name;
+    const templateEmail= props.email;
+    const templateMessage= props.message;
+    const serviceId = "service_fwwapgi";
+    const templateId = "template_iovwzbb";
+    const publicKey = "rlCbtS2_2joMn9HJx";
+    const templateParams = {
+      templateName,
+      templateEmail,
+      templateMessage
+    };
+    console.log(templateParams);
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => console.log(response))
+      .then((error) => console.log(error));
+
+    props.setName("");
+    props.setEmail("");
+    props.setMessage("");
+      // setEmailSent(true);
+  // const reset = () => {
+  //   setEmailSent(false);
+  // };
     props.setContactSwitch(false);
     props.setThankSwitch(true);
-  };
-
+}
   return (
     <div id='formBoxBox' className="flex justify-center items-center p-20">
         <div id='formBox' className='bg-rose-100 flex flex-col justify-center items-center shadow-lg shadow-black-300 border-purple-200 border-2'>

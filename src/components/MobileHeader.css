@@ -5,7 +5,7 @@
         /* font-family: 'Indie Flower', cursive; */
         font-family: 'Satisfy', cursive;
         font-size:25px;
-        line-height: 3rem;
+        line-height: 25px;
         text-align: center;
     }
     #logoPic{
@@ -13,11 +13,29 @@
         height: auto;
     }
     #button{
-        height: 50px;
+        height: 30px;
         margin-left: 25px;
         font-size: 20px;
         font-family: 'Rowdies', cursive;
         /* color: white; */
         /* border: solid 1px; */
     }
+    #logoBox{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
+@media only screen and (max-width: 436px){
+    #titleText{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #logoPic{
+        width: 75px;
+        height: auto;
+    }
+    #button{
+        height: 30px;
+        margin-left: 0;
+    }
+}    
