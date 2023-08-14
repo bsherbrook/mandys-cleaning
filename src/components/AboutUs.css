@@ -1,0 +1,19 @@
+#nurseMandy{
+    width: 700px;
+    border-radius: 10px;
+}
+#aboutTitleBox{
+    margin-top: 0px;
+}
+#aboutTitle{
+    font-size: 45px;
+}
+#aboutTitleText{
+    width: 600px;
+    line-height: 35px;
+}
+#aboutCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
