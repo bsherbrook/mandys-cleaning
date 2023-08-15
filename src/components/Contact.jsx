@@ -17,21 +17,19 @@ export default function ContactForm(props) {
   let inputValidation;
   let emailValidation;
   function handleValidation() {
-    let formName = document.getElementById('nameInput').value;
-    let formEmail = document.getElementById('emailInput').value;
-    let formMessage = document.getElementById('messageInput').value;
+    let formName = document.getElementById("nameInput").value;
+    let formEmail = document.getElementById("emailInput").value;
+    let formMessage = document.getElementById("messageInput").value;
     let atPos = formEmail.indexOf("@");
     let dotPos = formEmail.lastIndexOf(".");
     if (atPos > 0 && dotPos > atPos + 1 && dotPos < formEmail.length - 1) {
-      emailValidation=true;
-    }
-    else{
+      emailValidation = true;
+    } else {
       alert("Please enter a valid email address ex. john123@gmail.com");
     }
     if (formName && formMessage) {
-      inputValidation= true;
-    }
-    else {
+      inputValidation = true;
+    } else {
       alert("Please fill out all required fields before submitting");
     }
   }
@@ -61,19 +59,12 @@ export default function ContactForm(props) {
       props.setMessage("");
       props.setContactSwitch(false);
       props.setThankSwitch(true);
-      inputValidation=false;
-      emailValidation=false;
+      inputValidation = false;
+      emailValidation = false;
     }
   };
   return (
-    <div id="contactBody">
-       <div className='text-center' id="contactText">
-        Please get in touch to let us know how we can help!
-        </div>
-        <div id="contactBox" className="flex justify-center gap-10">
-          <div className="">Phone: 772-321-1328<br />Email:mandy1234@gmail.com</div>
-          <div className="">Phone Hours:<br /> Mon-Sun 9am-5pm</div>
-        </div>
+    <div id="contactBody" className="flex justify-center items-center">
       <div id="formBoxBox" className="flex justify-center items-center p-20">
         <div
           id="formBox"
@@ -126,6 +117,22 @@ export default function ContactForm(props) {
               </Button>
             </div>
           </form>
+        </div>
+      </div>
+      <div id="contactRight">
+        <div className="text-center text-2xl -mt-10 mb-10" id="contactText">
+          Please get in touch to let us know how we can help!
+        </div>
+        <div id="contactBox" className="flex justify-center gap-10">
+          <div className="text-xl">
+            <span className="text-xl mr-1">Phone:</span> <a className="text-blue-500" href="tel:+5555551234">772-321-1328</a>
+            <br />
+            <span className="mr-1">Email:</span><a className="text-blue-500" href="mailto:mandy1234@gmail.com">mandy1234@gmail.com</a>
+          </div>
+          <div className="text-xl">
+            Phone Hours:
+            <br /> Mon-Sun 9am-5pm
+          </div>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import HomePage from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ThankYou from "./components/ThankYou";
 import { motion } from "framer-motion";
+import Footer from "./components/Footer";
 
 function App() {
   const [contactSwitch, setContactSwitch] = useState(false);
@@ -46,7 +47,7 @@ function App() {
           />
         )}
         <div id="aboutBg"></div>
-        <div id="content" className="px-16">
+        <div id="content" className="">
           {homeSwitch && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -54,7 +55,10 @@ function App() {
               transition={{ duration: 1 }}
               exit={{ opacity: 0 }}
             >
-              <HomePage />
+              <HomePage 
+               setContactSwitch={setContactSwitch}
+               setHomeSwitch={setHomeSwitch}
+              />
             </motion.div>
           )}
           {aboutSwitch && (
@@ -93,6 +97,7 @@ function App() {
           {thankSwitch && <ThankYou />}
         </div>
       </div>
+      <Footer />
     </>
   );
 }

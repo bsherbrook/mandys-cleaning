@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
 
+#headerBox{
+    background-color: rgb(255, 190, 217);
+}
 #titleText{
     /* font-family: 'Indie Flower', cursive; */
     font-family: 'Satisfy', cursive;

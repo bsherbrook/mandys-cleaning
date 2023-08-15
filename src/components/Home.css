@@ -1,0 +1,18 @@
+#homeNursePic{
+    width: 500px;
+}
+#homePicBox{
+    width: 700px;
+}
+#wrapperTextBox{
+    width: 400px;
+    margin-left: -30px;
+}
+#homeWrapper{
+    margin: 0;
+    height: 550px;
+    width: 100vw;
+    background-image: url('src/assets/cute-bg7.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
