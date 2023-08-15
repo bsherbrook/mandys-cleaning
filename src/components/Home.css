@@ -16,3 +16,15 @@
     background-repeat: no-repeat;
     background-size:cover;
 }
+#aboutPromise{
+    width: 700px;
+    font-size: 20px;
+    text-indent: 50px;
+}
+#aboutPromiseTitle{
+    font-family:'Satisfy', cursive;
+}
+#aboutPic{
+    height: 300px;
+    margin-bottom: 15px;
+}

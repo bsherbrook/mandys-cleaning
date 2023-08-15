@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center items-center ">
-        <img id="tileBg" src="src/assets/cute-bg3.jpg" alt="" />
+        <img id="bgPic" src="src/assets/cute-bg3.jpg" alt="" />
       </div>
       <div className="h-screen">
         {width > breakpoint ? (
