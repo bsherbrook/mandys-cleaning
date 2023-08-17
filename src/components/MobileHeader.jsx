@@ -7,6 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
+import LogoPic from "../assets/logoHandRed.png"
 
 export default function MobileHeader(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -98,7 +99,7 @@ export default function MobileHeader(props) {
 
         <img
           className="ml-3"
-          src="./src/assets/logoHand.PNG"
+          src={LogoPic}
           alt="a hand holding a heart"
           id="logoPic"
         />

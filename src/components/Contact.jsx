@@ -125,9 +125,9 @@ export default function ContactForm(props) {
         </div>
         <div id="contactBox" className="flex justify-center gap-10">
           <div className="text-xl">
-            <span className="text-xl mr-1">Phone:</span> <a className="text-blue-500" href="tel:+5555551234">772-321-1328</a>
+            <span className="text-xl mr-1">Phone:</span> <a className="text-blue-500" href="tel:+7723217821">772-321-7821</a>
             <br />
-            <span className="mr-1">Email:</span><a className="text-blue-500" href="mailto:mandy1234@gmail.com">mandy1234@gmail.com</a>
+            <span className="mr-1">Email:</span><a className="text-blue-500" href="mailto:Mandyscompassionatecare@yahoo.com">Mandyscompassionatecare@yahoo.com</a>
           </div>
           <div className="text-xl">
             Phone Hours:

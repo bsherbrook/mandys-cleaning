@@ -1,7 +1,8 @@
 import Button from "@mui/material/Button";
 import './Header.css'
-
+import LogoPic from "../assets/logoHandRed.png"
 export default function Header(props) {
+
   function showContact(){
     props.setContactSwitch(true);
     props.setAboutSwitch(false);
@@ -35,7 +36,7 @@ export default function Header(props) {
                     <Button id="button" color="secondary" size="large" variant="outlined" onClick={showContact}>Contact</Button>
                   </div>
             </div>
-            <img src="./src/assets/logoHandRed.PNG" alt="a hand holding a heart" id="logoPic"/>
+            <img src={LogoPic} alt="a hand holding a heart" id="logoPic"/>
           </div>
         </div>
       </div>

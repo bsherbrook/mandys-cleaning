@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
 
+
 #nurseMandy{
     width: 700px;
     border-radius: 10px;
@@ -20,7 +21,7 @@
     gap: 50px;
 }
 #aboutWrapper{
-    background-image: url('src/assets/cute-bg-6.jpg');
+    /* background-image: url('src/assets/cute-bg-6.jpg'); */
     background-size: cover;
 }
 #aboutFounder{

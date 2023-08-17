@@ -1,5 +1,8 @@
 import "./Home.css";
+import WrapperBg from '../assets/cute-bg7.jpg';
 import PhoneIcon from "@mui/icons-material/Phone";
+import CouplePic from "../assets/senior-beach-couple-sam-williams.jpg";
+import OceanCouplePic from "../assets/elderly-ocean-katarzyna-grabowska.jpg"
 import Button from "@mui/material/Button";
 
 export default function HomePage(props) {
@@ -11,9 +14,17 @@ export default function HomePage(props) {
     props.setContactSwitch(true);
     props.setHomeSwitch(false);
   }
+  function goToAbout() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    props.setAboutSwitch(true);
+    props.setHomeSwitch(false);
+  }
   return (
     <>
-      <div id="homeWrapper" className="flex items-center justify-end">
+      <div id="homeWrapper" style={{backgroundImage: `url('${WrapperBg}')`}} className="flex items-center justify-end">
         <div id="wrapperTextBox" className="">
           <h1 className="text-4xl font-bold mb-6">
             Helping Seniors Be Their Best Selves
@@ -26,8 +37,8 @@ export default function HomePage(props) {
               Contact
             </Button>
             <PhoneIcon />
-            <a className="text-blue-500" href="tel:+5555551234">
-              772-321-1328
+            <a className="text-blue-500" href="tel:+7723217821">
+              772-321-7821
             </a>
           </p>
         </div>
@@ -37,7 +48,7 @@ export default function HomePage(props) {
         >
           <img
             id="homeNursePic"
-            src="src/assets/senior-beach-couple-sam-williams.jpg"
+            src={CouplePic}
             alt=""
             className="rounded-xl mb-5"
           />
@@ -52,7 +63,7 @@ export default function HomePage(props) {
       >
         <img
           id="aboutPic"
-          src="src/assets/elderly-ocean-katarzyna-grabowska.jpg"
+          src={OceanCouplePic}
           alt=""
         />
         <div
@@ -71,7 +82,7 @@ export default function HomePage(props) {
       </div>
       <div className="bg-rose-200 p-10 flex justify-center items-center flex-col text-xl">
         <div id="learnMore" className="mb-6">Learn More About Us Here</div>
-        <Button variant="contained">Learn More</Button>
+        <Button onClick={goToAbout} variant="contained">Learn More</Button>
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import "./AboutUs.css";
 import Nurse from "../assets/nurse-patient-topsphere-media.jpg";
+import Founder from "../assets/nurse-home-humberto-chavez.jpg";
+import BgImg from '../assets/cute-bg-6.jpg';
 import Button from "@mui/material/Button";
 
 export default function AboutUs(props) {
@@ -80,13 +82,14 @@ export default function AboutUs(props) {
         </div>
       </div>
       <div
+        style={{ backgroundImage:`url('${BgImg}')`}}
         id="aboutWrapper"
         className="mt-32 p-5 flex flex-col justify-center items-center"
       >
         <img
           id="aboutFounder"
           className="mb-10"
-          src="src/assets/nurse-home-humberto-chavez.jpg"
+          src={Founder}
           alt=""
         />
         <div className="text-3xl mb-6">Meet Our Founder:</div>

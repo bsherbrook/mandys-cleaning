@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import ThankYou from "./components/ThankYou";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer";
+import BgPic from "./assets/cute-bg3.jpg"
 
 function App() {
   const [contactSwitch, setContactSwitch] = useState(false);
@@ -28,7 +29,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center items-center ">
-        <img id="bgPic" src="src/assets/cute-bg3.jpg" alt="" />
+        <img id="bgPic" src={BgPic} alt="" />
       </div>
       <div className="h-screen">
         {width > breakpoint ? (
@@ -58,6 +59,7 @@ function App() {
               <HomePage 
                setContactSwitch={setContactSwitch}
                setHomeSwitch={setHomeSwitch}
+               setAboutSwitch={setAboutSwitch}
               />
             </motion.div>
           )}
