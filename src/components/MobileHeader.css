@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     #titleText{
         /* font-family: 'Indie Flower', cursive; */
         font-family: 'Satisfy', cursive;

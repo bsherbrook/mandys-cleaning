@@ -12,6 +12,7 @@
     margin: 0;
     height: 550px;
     width: 100vw;
+    /* width: 100%; */
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -19,11 +20,160 @@
     width: 700px;
     font-size: 20px;
     text-indent: 50px;
+    font-family: 'Montserrat', sans-serif;  
 }
 #aboutPromiseTitle{
-    font-family:'Satisfy', cursive;
+    font-family: 'Julius Sans One', sans-serif;
 }
 #aboutPic{
     height: 300px;
     margin-bottom: 15px;
+}
+#wrapperTitle{
+    font-family: 'Montserrat', sans-serif;
+}
+#wrapperSubtitle{
+font-family: 'Indie Flower', cursive;
+/* font-family: 'Montserrat', sans-serif;   */
+}
+#picSubtext{
+/* font-family: 'Rowdies', cursive; */
+/* font-family: 'Satisfy', cursive; */
+/* font-family: 'Caprasimo', cursive; */
+/* font-family: 'Indie Flower', cursive; */
+    font-family: 'Jost', sans-serif; 
+/* font-family: 'Julius Sans One', sans-serif; */
+/* font-family: 'Lexend', sans-serif; */
+/* font-family: 'Montserrat', sans-serif;   */
+}
+#learnMore{
+    font-family: 'Montserrat', sans-serif;  
+}
+@media only screen and (max-width: 1490px){
+    #homePicBox{
+        width: 500px;
+    }
+    #homeNursePic{
+        width: 400px;
+    }   
+}
+@media only screen and (max-width: 1210px){
+    #homePicBox{
+        width: 400px;
+    }
+    #homeNursePic{
+        width: 350px;
+    }  
+    #wrapperTextBox{
+        width:350px;
+    }
+}
+@media only screen and (max-width: 1030px){
+    #homeWrapper{
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction:column-reverse;
+        padding-right: 120px;
+    }
+    #homeNursePic{
+        margin-left: 60px;
+    }
+    #picSubtext{
+        display: none;
+    }
+    #wrapperTitle{
+        width: 550px;
+        font-size: 30px;
+        margin-left: -100px;
+    }
+    #promiseWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #aboutPromise{
+        width: 600px;
+        text-align: center;
+    }
+    #aboutPic{
+        width: 470px;
+    }
+}
+@media only screen and (max-width: 790px){ 
+    #wrapperTitle{
+        text-align: center;
+        width: 350px;
+        font-size: 30px;
+        margin-left: -4px;
+    }
+    #homeWrapper{
+        align-items: start;
+        margin: 0;
+        height: 550px;
+        background-size:100vw 550px;
+        /* background-size: 100% 550px; */
+    }
+    #wrapperTextBox{
+        margin-left: 60px;
+    }
+    #homePicBox{
+        margin-left: 0px;
+    }
+
+}
+@media only screen and (max-width: 600px){ 
+
+    #homeNursePic{
+        width: 300px;
+    }
+    #wrapperTextBox{
+        border-radius: 12px;
+    }
+    #aboutPromise{
+        width: 400px;
+    }
+    #aboutPromiseTitle{
+        font-weight: bold;
+    }
+    #aboutPic{
+        width: 400px;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 500px){ 
+    #homePicBox{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 420px){ 
+    #homeWrapper{
+        justify-content: center;
+    }
+    /* #homeNursePic{
+        margin-left: -30px;
+    } */
+    #wrapperTextBox{
+        margin-left: 50px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #aboutPromise{
+        width: 350px;
+    }
+    #homePicBox{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 388px){ 
+    #wrapperTextBox{
+        margin-left: 40px;
+    }
+    #homeNursePic{
+        margin-left: 15px;
+    }
 }

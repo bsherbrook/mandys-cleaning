@@ -15,12 +15,12 @@ export default function AboutUs(props) {
   }
   return (
     <>
-      <div className=" flex justify-around">
+      <div id="aboutTitlePicBox" className="flex justify-around">
         <div
           id="aboutTitleBox"
-          className="flex flex-col justify-center items-center"
+          className="text-fuchsia-800 flex flex-col justify-center items-center"
         >
-          <div id="aboutTitle" className="text-3xl mb-5 font-extrabold">
+          <div id="aboutTitle" className="text-3xl mb-5 text-fuchsia-600 font-extrabold">
             About Us
           </div>
           <div id="aboutTitleText" className="text-xl first-letter:text-4xl">
@@ -39,8 +39,8 @@ export default function AboutUs(props) {
           id="aboutCardLeft"
           className="bg-rose-50 rounded-lg p-10 flex flex-col justify-center items-center"
         >
-          <div className="text-3xl mb-3">Our Approach:</div>
-          <div className="text-lg mb-6">
+          <div id="approachTitle" className="text-blue-900 text-3xl mb-3">Our Approach:</div>
+          <div id="approachText" className="text-blue-900 text-lg mb-6">
             What sets Compassionate Care Services apart is our unique blend of
             organized living space contributes to both physical and mental
             nurturing care and meticulous cleaning. We understand that a clean
@@ -56,25 +56,25 @@ export default function AboutUs(props) {
           id="aboutCardRight"
           className="bg-rose-50 rounded-lg p-10 flex flex-col justify-center items-center"
         >
-          <div className="text-3xl mb-3">Services We Offer:</div>
-          <ul className="list-disc">
+          <div id="servicesTitle" className="text-blue-900 text-3xl mb-3">Services We Offer:</div>
+          <ul id="servicesText" className="list-disc text-blue-900 text-xl">
             <li>
-              <span className="text-lg underline">Elderly Companionship:</span>{" "}
+              <span className="text-xl underline">Elderly Companionship:</span>{" "}
               Caring professionals that are friends and listen
             </li>
             <li>
-              <span className="text-lg underline">Cleaning Excellence:</span> A
+              <span className="text-xl underline">Cleaning Excellence:</span>{" "} A
               healthy environment to promote health and wellbeing
             </li>
             <li>
-              <span className="text-lg underline">
+              <span className="text-xl underline">
                 Personalized Care Plans:
               </span>{" "}
               Every individual has unique needs, and we tailor our services to
               match them.
             </li>
             <li>
-              <span className="text-lg underline">Medication Reminders:</span>{" "}
+              <span className="text-xl underline">Medication Reminders:</span>{" "}
               Our caregivers provide gentle reminders and assistance with
               medications
             </li>
@@ -92,8 +92,8 @@ export default function AboutUs(props) {
           src={Founder}
           alt=""
         />
-        <div className="text-3xl mb-6">Meet Our Founder:</div>
-        <div id="founderText" className="text-xl">
+        <div id="founderTitle" className="text-3xl mb-6">Meet Our Founder:</div>
+        <div id="founderText" className="text-xl mb-20">
           At the heart of Compassionate Care Services is Amanda Sherbrook, a
           compassionate mother of three and a dedicated nurse's assistant with a
           genuine passion for caregiving. Drawing from her experience in

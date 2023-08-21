@@ -20,14 +20,14 @@ function App() {
   const [message, setMessage] = useState("");
   const [width, setWidth] = useState(window.innerWidth);
 
-  const breakpoint = 600;
+  const breakpoint = 790;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
 
   return (
-    <>
+    <div id="appBox" className="">
       <div className="flex justify-center items-center ">
         <img id="bgPic" src={BgPic} alt="" />
       </div>
@@ -60,6 +60,7 @@ function App() {
                setContactSwitch={setContactSwitch}
                setHomeSwitch={setHomeSwitch}
                setAboutSwitch={setAboutSwitch}
+               width={width}
               />
             </motion.div>
           )}
@@ -100,7 +101,7 @@ function App() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

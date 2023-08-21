@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Indie+Flower&family=Jost&family=Julius+Sans+One&family=Lexend&family=Montserrat&family=Rowdies:wght@300&family=Satisfy&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: rgb(250, 215, 222);
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

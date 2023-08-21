@@ -73,7 +73,7 @@ export default function ContactForm(props) {
           <h1 id="formTitle" className="text-3xl p-5">
             Contact Us
           </h1>
-          <form onSubmit={handleSubmit} className="">
+          <form id="contactFormText" onSubmit={handleSubmit} className="">
             <div>
               <label>Name:</label>
               <br />
@@ -125,11 +125,25 @@ export default function ContactForm(props) {
         </div>
         <div id="contactBox" className="flex justify-center gap-10">
           <div className="text-xl">
-            <span className="text-xl mr-1">Phone:</span> <a className="text-blue-500" href="tel:+7723217821">772-321-7821</a>
+            <span id="contactInfoTitles" className="text-2xl mr-1">
+              Phone:{" "}
+            </span>{" "}
+            <a className="text-blue-500" href="tel:+7723217821">
+              772-321-7821
+            </a>
             <br />
-            <span className="mr-1">Email:</span><a className="text-blue-500" href="mailto:Mandyscompassionatecare@yahoo.com">Mandyscompassionatecare@yahoo.com</a>
+            <span id="contactInfoTitles" className="mr-1 text-2xl">
+              Email:{" "}
+            </span>
+            <a
+              className="text-blue-500"
+              href="mailto:Mandyscompassionatecare@yahoo.com"
+            >
+              info@mandyscarefl.com
+              {/* Mandyscompassionatecare@yahoo.com */}
+            </a>
           </div>
-          <div className="text-xl">
+          <div id="contactInfoTitles" className="text-2xl">
             Phone Hours:
             <br /> Mon-Sun 9am-5pm
           </div>

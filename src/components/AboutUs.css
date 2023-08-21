@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
-
-
 #nurseMandy{
     width: 700px;
     border-radius: 10px;
+    margin-right: 20px;
 }
 #aboutTitleBox{
     margin-top: 0px;
+    margin-left: 20px;
 }
 #aboutTitle{
-    font-size: 45px;
+    font-size: 55px;
+    font-family: 'Satisfy', cursive;
 }
 #aboutTitleText{
     width: 600px;
-    line-height: 35px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;  
 }
 #aboutCard{
     display: grid;
@@ -21,15 +22,114 @@
     gap: 50px;
 }
 #aboutWrapper{
-    /* background-image: url('src/assets/cute-bg-6.jpg'); */
     background-size: cover;
 }
 #aboutFounder{
     margin-top: -75px;
     width: 900px;
+    border-radius: 10px;
 }
 #founderText{
     width: 1200px;
     text-indent: 100px;
     line-height: 36px;
+}
+#approachTitle{
+font-family: 'Lexend', sans-serif
+}
+#approachText{
+    /* font-family: 'Rowdies', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Caprasimo', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Jost', sans-serif;  */
+    /* font-family: 'Julius Sans One', sans-serif; */
+    /* font-family: 'Lexend', sans-serif; */
+    font-family: 'Montserrat', sans-serif;  
+}
+#servicesTitle{
+    font-family: 'Lexend', sans-serif;
+}
+#servicesText{
+    font-family: 'Montserrat', sans-serif;   
+}
+#founderTitle{
+    font-size: 35px;
+    font-family: 'Satisfy', cursive;
+}
+#founderText{
+    font-family: 'Jost', sans-serif; 
+}
+@media only screen and (max-width: 1352px){ 
+    #nurseMandy{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 1248px){ 
+    #founderText{
+        display: flex;
+        width: auto;
+    }
+    #aboutTitleText{
+        width: auto;
+        display: flex;
+        padding: 10px;       
+    }
+    #nurseMandy{
+        width: 600px;
+        max-height: 350px;
+    }
+}
+@media only screen and (max-width: 1148px){
+    #aboutTitlePicBox{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #nurseMandy{
+        margin-left: 20px;
+    }
+    #aboutTitleBox{
+        margin-top: 35px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 880px){
+    #aboutCard{
+        display: flex;
+        flex-direction: column;
+    }
+    #aboutCardLeft{
+        margin: 0 20px 0 20px;
+    }
+    #aboutCardRight{
+        margin: 0 20px 0 20px;
+    }
+}
+@media only screen and (max-width: 740px){
+    #nurseMandy{
+        width: 500px;
+    }
+}    
+@media only screen and (max-width: 620px){
+    #nurseMandy{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 435px){
+    #aboutTitleBox{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #nurseMandy{
+        width: 350px;
+    }
+    #aboutCardLeft{
+        padding-left: 15px;
+        padding-right: 10px ;
+    }
+    #aboutCardRight{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
 }

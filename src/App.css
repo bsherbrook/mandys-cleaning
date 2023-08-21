@@ -1,8 +1,21 @@
+/* #appBox{
+  width: 1900px;
+} */
 #bgPic{
   position: absolute;
   z-index: -1;
   top: 200px;
-  opacity: 50%;
+  opacity: 30%;
   width: 100%;
-  /* height: 800px; */
+  height: 1200px; 
 }
+@media only screen and (max-width: 1030px){
+  #bgPic{
+   top: 0px;
+  }   
+}
+/* @media only screen and (max-width: 800px){
+  #bgPic{
+    height: 100%; 
+  }   
+} */

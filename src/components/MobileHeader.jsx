@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
-import LogoPic from "../assets/logoHandRed.png"
+import LogoPic from "../assets/logoHandRed.png";
 
 export default function MobileHeader(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -38,7 +38,7 @@ export default function MobileHeader(props) {
   }
   return (
     <>
-      <div className="text-white bg-pink-300 flex justify-around shadow-md shadow-pink-400 items-center">
+      <div id="mobileHeader" className="text-white mb-32 bg-pink-300 flex justify-around shadow-md shadow-pink-400 items-center">
         <Button
           sx={{ ml: 0, mr: 2 }}
           id="button"
