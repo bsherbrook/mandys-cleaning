@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rowdies:wght@300&family=Satisfy&display=swap');
 
+#mobileHeader{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
 @media only screen and (max-width: 800px){
     #titleText{
         /* font-family: 'Indie Flower', cursive; */

@@ -32,7 +32,7 @@ export default function AboutUs(props) {
             comfortable environment for seniors to thrive.
           </div>
         </div>
-        <img id="nurseMandy" src={Nurse} alt="Nurse Mandy" className="z-50" />
+        <img id="nurseMandy" src={Nurse} alt="Nurse Mandy" className="z-10" />
       </div>
       <div id="aboutCard" className="my-32">
         <div

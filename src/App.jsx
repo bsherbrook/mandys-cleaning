@@ -27,11 +27,11 @@ function App() {
   }, []);
 
   return (
-    <div id="appBox" className="">
+    <div id="appBox" className="">                       
       <div className="flex justify-center items-center ">
         <img id="bgPic" src={BgPic} alt="" />
       </div>
-      <div className="h-screen">
+      <div className="">
         {width > breakpoint ? (
           <Header
             setContactSwitch={setContactSwitch}
@@ -100,7 +100,7 @@ function App() {
           {thankSwitch && <ThankYou />}
         </div>
       </div>
-      <Footer />
+      <Footer />  
     </div>
   );
 }

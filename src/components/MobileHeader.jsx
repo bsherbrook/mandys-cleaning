@@ -23,18 +23,30 @@ export default function MobileHeader(props) {
     props.setAboutSwitch(false);
     props.setHomeSwitch(false);
     props.setThankSwitch(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
   function showAbout() {
     props.setAboutSwitch(true);
     props.setHomeSwitch(false);
     props.setContactSwitch(false);
     props.setThankSwitch(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
   function showHome() {
     props.setHomeSwitch(true);
     props.setAboutSwitch(false);
     props.setContactSwitch(false);
     props.setThankSwitch(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
   return (
     <>
