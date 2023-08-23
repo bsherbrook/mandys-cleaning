@@ -139,7 +139,7 @@ export default function ContactForm(props) {
               className="text-blue-500"
               href="mailto:Mandyscompassionatecare@yahoo.com"
             >
-              info@mandyscarefl.com
+              info@mandycaresfl.com
               {/* Mandyscompassionatecare@yahoo.com */}
             </a>
           </div>

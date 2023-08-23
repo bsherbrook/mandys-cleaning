@@ -133,3 +133,8 @@ font-family: 'Lexend', sans-serif
         padding-right: 10px;
     }
 }
+@media only screen and (max-width: 435px){
+    #nurseMandy{
+        width: 325px;       
+    }
+}

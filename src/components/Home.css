@@ -177,3 +177,13 @@ font-family: 'Indie Flower', cursive;
         margin-left: 15px;
     }
 }
+@media only screen and (max-width: 370px){ 
+    #wrapperTextBox{
+        margin-left: 30px;
+    }
+    #homeNursePic{
+        margin-left: 5px;
+        width: 250px;
+    }
+   
+}

@@ -8,11 +8,12 @@
     font-family: 'Satisfy', cursive;
 }
 #contactText{
-/* font-family: 'Satisfy', cursive; */
-font-family: 'Indie Flower', cursive;
-font-size: 25px;
-/* font-family: 'Jost', sans-serif;  */
-/* font-family: 'Montserrat', sans-serif;   */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    padding: 12px;
+    /* font-family: 'Jost', sans-serif;  */
+    /* font-family: 'Montserrat', sans-serif;   */
 }
 #contactInfoTitles{
     font-family: 'Jost', sans-serif; 
@@ -27,7 +28,7 @@ font-size: 25px;
 }
 @media only screen and (max-width: 1050px){
     #contactBody{
-        flex-direction:column-reverse;
+        flex-direction:column-reverse;       
     }
 }
 @media only screen and (max-width:735px){
@@ -37,5 +38,7 @@ font-size: 25px;
     }
 }
 @media only screen and (max-width:480px){
-    
-}
+   #formBoxBox{
+    padding: 50px 0 0 0;   
+    }
+}   
